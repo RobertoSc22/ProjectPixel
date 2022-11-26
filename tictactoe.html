@@ -1,0 +1,101 @@
+<html>
+<head>
+<!--Collegamento alla finestra css-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="tictactoe.css" rel="stylesheet" type="text/css">
+<!---->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-with, initial-scale=1.0">
+</head>
+<body>
+<!---------------Menu---------------------------------->
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<!--
+<i class="fas fa-bars"></i>
+-->
+</label>
+<label class="logo">Lyn4</label>
+<ul>
+<li><a class="active" href="https://lyn4.altervista.org/">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Feedback</a></li>
+</ul>
+</nav>
+<!----------------------------------------------------->
+
+<div id="title">Tic Tac Toe
+</div>
+
+<div class="inputDiv">
+<div>
+<input text="text" class="inputPlayers" id="playerOne" value="   Player 1">
+<input text="text" class="inputPlayers" id="playerTwo" value="   Player 2">
+</div>
+<button id="submitInput" onclick="submitValues()">Submit</button>
+</div>
+
+
+
+<div id="container">
+<div class="box1">
+<button class="buttonBoxInput" id="btnBox1" onclick="boxOne()"></button>
+</div>
+<div class="box2">
+<button class="buttonBoxInput" id="btnBox2" onclick="boxTwo()"></button>
+</div>
+<div class="box3">
+<button class="buttonBoxInput" id="btnBox3" onclick="boxThree()"></button>
+</div>
+
+<div class="box4">
+<button class="buttonBoxInput" id="btnBox4" onclick="boxFour()"></button>
+</div>
+<div class="box5">
+<button class="buttonBoxInput" id="btnBox5" onclick="boxFive()"></button>
+</div>
+<div class="box6">
+<button class="buttonBoxInput" id="btnBox6" onclick="boxSix()"></button>
+</div>
+
+<div class="box7">
+<button class="buttonBoxInput" id="btnBox7" onclick="boxSeven()"></button>
+</div>
+<div class="box8">
+<button class="buttonBoxInput" id="btnBox8" onclick="boxEight()"></button>
+</div>
+<div class="box9">
+<button  class="buttonBoxInput" id="btnBox9" onclick="boxNine()"></button>
+</div>
+</div>
+
+<div id="whoStart">
+</div>
+
+<div id="clear">
+<button id="clearBtn" onclick="clearDisplay()">Clear</button>
+</div>
+
+<section id="point">
+<button id="one" onclick="playerOneScore()"></button>
+<button id="two" onclick="playerTwoScore()"></button>
+</section>
+
+<section id="scoreSection">
+<div id="columnLeft"></div>
+<div id="columnRight"></div>
+</section>
+
+
+<div id="footer">@2022
+</div>
+
+
+<body>
+<script src="tictactoe.js"></script>
+</html>
